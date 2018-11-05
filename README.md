@@ -9,15 +9,15 @@ In this lesson, we'll learn about the **_Geometric Distribution_** and how we ca
 
 You will be able to:
 
-* Understand and explain the Geometric Distribution and its uses. 
+* Understand and explain the Geometric Distribution and its uses 
 
-### What is the Geometric Distribution?
+## What is the Geometric Distribution?
 
 Most people are initially confused the first time they hear about the **_Geometric Distribution_** because it's name seems a bit misleading.  Although the term _geometric_ brings to mind shapes, area, perimeter, and all the other fun stuff we learned in high school geometry class, the Geometric Distribution has nothing to do with these topics.  In this case, _Geometric_ just refers to the concept of multiplication.  The Geometric Distribution is a discrete probability distribution that helps us calculate the probability distribution of repeated independent events. 
 
 If this reminds you of the **_Negative Binomial Distribution_** that we learned about in a previous lesson, then you're on the right track--the Geometric Distribution is just a special case of the Negative Binomial Distribution!
 
-### Questions We Can Answer With The Geometric Distribution
+## Questions We Can Answer With The Geometric Distribution
 
 To help us understand and remember what the Geometric Distribution is used for, let's look at it through the lens of the Negative Binomial Distribution.  Recall that the Negative Binomial Distribution tells us the probability of hitting a specific number of failures (or successes, depending on how we phrase our problem) on a specific round of independent trials where the probability of success is known and unchanging.  You may recall the example we solved in our previous lesson, which was "What is the probability distribution for flipping a fair coin before tails shows up a total of twice?"  In this case, the Probability $P$ is 0.5, the cumulative number of failures, $r$ is 2, and the number the random variable, $x$, is the number of trials it takes before the total number of coin flips that land on tails is 2.  
 
@@ -25,7 +25,7 @@ The Geometric Distribution is extremely similar.  Whereas $r$ is a parameter we 
 
 Whereas our previous example for the Negative Binomial Distribution was about how many times we could flip a coin before tails comes up twice, an equivalent question we could solve with the Geometric Distribution would be "What is the probability that I can flip a coin X times before it lands on tails?"  
 
-### Geometric Distribution Equation
+## Geometric Distribution Equation
 
 As mentioned previously, questions that can be answered with the Geometric Distribution fall under the  same constraints as the Negative Binomial Distribution:
 
@@ -54,7 +54,7 @@ $q$: (1 - p), which is the probability of success for a given trial. Again, reme
 
 Note that in cases where there is an equal chance of both outcomes such as our coin flip example, p and q are the same thing.  This means that for "fair" trials where there is an equal chance of success or failure, we can further simplify our equation to $$P(X=x) = q^x$$
 
-#### Sample Problem 1
+### Sample Problem 1
 
 Let's use our newfound knowledge of the Geometric Distribution to answer a sample question about coin flips.  What are the odds that we can flip a fair coin 3 times in a row without landing on tails?
 
@@ -70,7 +70,7 @@ $$P(X=3) = (0.5)^{(3 - 1)} * 0.5$$
 
 $$P(X=3) = (0.5)^3 = 0.125$$
 
-#### Sample Problem 2
+### Sample Problem 2
 
 In cases where the probability of success and failure are not equal, this is a bit more interesting.  Let's examine a more interesting sample problem--Roulette!
 
@@ -112,7 +112,7 @@ $$0.00000010625182796895225\%$$
 
 Incredible, but that's the thing about randomness; anything is possible, and over a sufficient enough number of samples, even the most improbable things are likely to happen at least once!
 
-### Phrasing Our Answer as a Distribution
+## Phrasing Our Answer as a Distribution
 
 In the examples above, we calculated a single probability. However, a more statistical way to think of these problems is to phrase it as a distribution, where we display the probability for every number in a given range. 
 
@@ -158,8 +158,8 @@ for x in range(1, 11):
     Probability of roulette landing on red 8 times in a row: 0.52805%
     Probability of roulette landing on red 9 times in a row: 0.27776%
     Probability of roulette landing on red 10 times in a row: 0.14610%
-    
 
-# Conclusion
+
+## Summary
 
 In this lesson, we learned about the **_Geometric Distibution_**, how to calculate probability distributions with it, it's relationship to the Binomial/Negative Binomial Distributions,  and how to apply it to real world problems!
